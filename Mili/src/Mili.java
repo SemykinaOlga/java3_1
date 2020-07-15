@@ -1,7 +1,8 @@
 public class Mili {
     public static void main(String[] args) {
-        int price=7800;
-        int mili=price/20;
+        BonusMilesService service=new BonusMilesService();
+        int price=150000;
+        int mili=service.calculate(price);
         System.out.println(mili);
     }
 }
